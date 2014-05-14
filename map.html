@@ -31,12 +31,6 @@
                     var map = L.mapbox.map('map','itzo.hmen98od')
                         .setView([50.847,  2.890], 12);
                         
-                        L.circle([50.847,  2.890], 20000, { //20000 son los kms que abarca
-			  'color' : '#3a6',
-			  'weight': 20,
-			  'fillColor':'#a6a',
-			  'fillOpacity':0.9
-			}).addTo(map);
 
                     $(document).ready(function(){
 
@@ -64,6 +58,13 @@
                                 }
 
                             }).addTo(map);
+                            
+                            L.circle([pos.coords.latitude,  pos.coords.longitude], 200, { //20000 son los kms que abarca
+			  'color' : '#3a6',
+			  'weight': 20,
+			  'fillColor':'#a6a',
+			  'fillOpacity':0.9
+			}).addTo(map);
 
 
                         }
