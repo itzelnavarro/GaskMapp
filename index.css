@@ -234,7 +234,7 @@
 
 #saltar{
     color:#fff;
-    text-align: right;
+    right: 1px;
 }
 
 @media only screen and (max-width: 960px) {
