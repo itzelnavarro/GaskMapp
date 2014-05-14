@@ -35,13 +35,15 @@
                     $(document).ready(function(){
 
                         $('#btn2').click(function(){
-                            if (navigator.geolocation) {
-                                navigator.geolocation.getCurrentPosition(mostrarPos);
-                            }
-                            else{
-                                alert('navegador antiguo');
-                            }
-                            
+                           $.get('http://freegeoip.net/json/', function(data) { 
+				  var position = {
+				    coords : {
+				      latitude : data.latitude,
+				      longitude : data.longitude
+				    }
+				  };
+				  mostrarPos(position);
+				});
                             
                             
                         });
