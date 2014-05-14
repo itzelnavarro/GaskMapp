@@ -232,6 +232,11 @@
     margin-right: auto;
 }
 
+#salir{
+    color:#fff;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 960px) {
     #nav {
         float: left;
